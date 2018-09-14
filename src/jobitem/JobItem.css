@@ -1,0 +1,237 @@
+.job-item.completed {
+  background-color: rgba(118, 194, 245, 0.3);
+}
+
+.job-item.suspended {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.5;
+}
+
+.job-item.rendering {
+  background-color: rgba(118, 245, 173, 0.3);
+}
+
+.job-item.failed {
+  background-color: rgba(243, 116, 116, 0.3);
+}
+
+.job-item.pending {
+  background-color: rgba(226, 158, 239, 0.3);
+}
+
+.job-item.queued {
+  background-color: rgba(132, 185, 204, 0.25);
+}
+
+.job-item {
+  border-radius: 5px;
+}
+
+.job-item .container {
+  box-shadow: 5px 5px 15px rgba(34, 50, 74, 0.27);
+  margin-bottom: 15px;
+  background-color: rgba(132, 185, 204, 0.1);
+  display: flex;
+  flex-direction:column;
+  overflow: hidden;
+}
+
+/*Content*/
+.job-item .content {
+  padding: 8px;
+  flex-grow: 1;
+}
+
+/*bar*/
+.job-item .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-item .top svg {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.job-item .title {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 8px;
+  font-size: 18px;
+  height: 26px;
+  line-height: 26px;
+}
+
+.job-item .plugin-logo {
+  width: 15px;
+}
+
+/*sub content*/
+.job-item .sub-content {
+  flex-grow: 1;
+  display: flex;
+  height: 70px;
+}
+
+/*left*/
+.job-item .left-area {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+}
+
+.job-item .user-info {
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.job-item .user-info svg {
+  margin-right: 4px;
+}
+
+/*widgets*/
+.job-item .widgets {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.job-item .widget {
+  display: flex;
+  align-items: center;
+}
+
+.job-item .widget:not(:first-child) {
+  margin-left: 16px;
+}
+
+.job-item .widget svg {
+  fill: rgba(255, 255, 255, 0.55);
+}
+
+.job-item .widget.errors svg {
+  fill: rgb(243, 116, 116) !important;
+}
+
+.job-item .widget .icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+
+.job-item .widget .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+  width: 75px;
+}
+
+.job-item .widget .value {
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.job-item .widget .header {
+  font-size: 10px;
+  font-weight: 200;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -2px;
+}
+
+/*right*/
+.job-item .right-area {
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 68px;
+}
+
+.job-item .priority {
+  font-size: 30px;
+  color: rgb(255, 252, 211);
+  text-shadow: 0 0 6px rgba(255, 251, 133, 0.6);
+  font-weight: 200;
+}
+
+.job-item .pool {
+  font-weight: 200;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*Progress*/
+.job-item .progress {
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 18px;
+  box-shadow: 0 -1px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.job-item .progress .bar {
+  width: 100%;
+  height: 100%;
+}
+
+.job-item .progress .seg {
+  height: 100%;
+  display: inline-block;
+}
+
+.job-item .progress .seg.completed {
+  background-color: rgb(118, 194, 245);
+}
+
+.job-item .progress .seg.rendering {
+  background-color: rgb(118, 245, 173);
+}
+
+.job-item .progress .seg.suspended {
+  background-color: rgb(150, 150, 150);
+}
+
+.job-item .progress .seg.failed {
+  background-color: rgb(243, 116, 116);
+}
+
+.job-item .progress .seg.pending {
+  background-color: rgb(226, 158, 239);
+}
+
+.job-item .status {
+  padding: 0 4px;
+  position: relative;
+  top: -19px;
+  width: 100%;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-item .first-frame {
+  width: 40px;
+}
+
+.job-item .status-text {
+  font-weight: 600;
+}
+
+.job-item .last-frame {
+  text-align: right;
+  width: 40px;
+}
