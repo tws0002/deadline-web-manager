@@ -64,3 +64,4 @@ typings/
 public/
 build/
 *.bat
+serverURL.js
